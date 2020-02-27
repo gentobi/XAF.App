@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:XAF.App.Views;assembly=XAF.App"
              mc:Ignorable="d"
              x:Class="XAF.App.Views.MainPage">
-  <!--Pages can be added as references or inline-->
-  <ContentPage Title="Tab 1" />
-  <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
+    <!--Pages can be added as references or inline-->
+    <views:HomePage IconImageSource="home" Padding="0"></views:HomePage>
+    <ContentPage IconImageSource="card" Padding="0" />
+    <ContentPage IconImageSource="setting" />
 </TabbedPage>
